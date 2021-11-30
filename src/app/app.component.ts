@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Constants } from './constants/constants';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fran-yeguez-pt2';
+
+  LOREM_IPSUM_L = Constants.LOREM_IPSUM_L;
+  FRAN_Y = Constants.FRAN_Y;
 }

@@ -1,0 +1,9 @@
+  <div class="container">
+    <h1 style="text-decoration: underline;">Noticias</h1>
+    <div class="row">
+      <div class="one-third column" *ngFor="let newA of news">
+        <h4>{{newA.title}}</h4>
+        <p>{{newA.description}}</p>
+      </div>
+    </div>
+  </div>

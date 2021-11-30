@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/fran-yeguez-pt2",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
