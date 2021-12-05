@@ -1,13 +1,13 @@
-<div class="container">
-  <h1 style="text-decoration: underline;">Anuncios</h1>
-  <div class="card" *ngFor="let image of this.images">
-    <img src="{{image.download_url}}"
-         alt="{{image.author}}"
-         width="250"
-         height="200"
-         class="u-max-full-width">
-    <div class="container-adv">
-      <p>{{image.author}}</p>
+<div class="heading">
+  <h1 class="primary">Anuncios</h1>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="six columns" *ngFor=" let image of this.images">
+        <img src="{{image.download_url}}" alt="{{image.author}}" class="u-max-full-width">
+          <div class="container-adv">
+            <h4>{{image.author}}</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>

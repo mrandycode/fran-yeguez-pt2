@@ -20,6 +20,10 @@ import { BannerRadioComponent } from './core/radio/banner-radio/banner-radio.com
 import { LocationComponent } from './core/location/location.component';
 import { AgmCoreModule } from '@agm/core';
 import { BannerLocationComponent } from './core/location/banner-location/banner-location.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarSecondaryComponent } from './shared/navbar-secondary/navbar-secondary.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactComponent } from './core/contact/contact.component';
 
 const components = [
   VideosComponent,
@@ -39,7 +43,10 @@ const components = [
     RadioComponent,
     BannerRadioComponent,
     LocationComponent,
-    BannerLocationComponent
+    BannerLocationComponent,
+    NavbarComponent,
+    NavbarSecondaryComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -48,6 +55,7 @@ const components = [
     BrowserModule,
     AppRoutingModule,
     NgImageSliderModule,
+    FontAwesomeModule,
     AgmCoreModule.forRoot({
       apiKey: ''
     })
@@ -56,7 +64,8 @@ const components = [
     components,
     CommonModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [AdvertisingService],
   bootstrap: [AppComponent]

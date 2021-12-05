@@ -1,0 +1,27 @@
+:root {
+  --primary: #3d5a80;
+  --secondary:#98c1d9;
+  --third:#ffff;
+  --strong:#293241;
+  --alternative-1:#ff554e;
+  --white:#ffff;
+}
+
+.primary{
+  color:var(--primary);
+}
+.secondary{
+color: var(--secondary);
+}
+.third{
+  color:var(--third);
+}
+.strong{
+  color:var(--strong);
+}
+.alternative-1{
+  color:var(--alternative-1)
+}
+.white{
+  color:var(--white)
+}

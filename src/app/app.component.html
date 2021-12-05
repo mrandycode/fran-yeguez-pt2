@@ -1,239 +1,186 @@
-<style>
-  .bg-blue {
-    color: #ffffff;
-    background-color: #1EAEDB;
-  }
-
-  .bg-beige {
-    color: #000000;
-    background-color: #E1E1E1;
-  }
-
-  .bg-yellow {
-    color: #ffffff;
-    background-color: #ffff00;
-  }
-
-  .bg-blue10 {
-    color: #ffffff;
-    background-color: #000000;
-  }
-
-  .bg-white {
-    color: #ffffff;
-    background-color: #ffffff;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: #111111;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-    color: #E1E1E1;
-    padding-bottom: 5rem;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 10.5rem;
-  }
-
-  .display-h2 {
-    text-align: center;
-    font-size: 8.5rem;
-  }
-
-  .display-h3-left {
-    text-align: left;
-    font-size: 5.5rem;
-  }
-
-  .nav-bar-top {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-  }
-
-  .img-shadow {
-    box-shadow: 2px 2px 2px 1px rgba(2, 0, 0, 0.2);
-    border-radius: 2rem;
-  }
-
-  .primary {
-    background-color: #ffffff;
-  }
-
-  .secondary {
-    background-color: #0FA0CE;
-  }
-
-  .container-pading {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .border-div {
-    border: 2px solid #555555;
-  }
-
-  .mt-1 {
-    margin-top: 2rem;
-  }
-
-  .mt-2 {
-    margin-top: 6rem;
-  }
-
-  .ml-1 {
-    margin-left: 2rem;
-  }
-
-  .update {
-    position: relative;
-    background-image: url(assets/images/overlay.png), url(assets/images/overlay.png);
-    background-position: top left, top left, center center;
-    background-repeat: repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    z-index: 1;
-
-  }
-
-  .backgrund-container {
-    background-color: #e5e6e4;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 2%
-  }
-</style>
-
-  <div class="row" style="box-shadow: 2px 2px 2px 1px rgba(2, 0, 0, 0.2)">
-    <div class="twelve columns bg-blue10 nav-bar-top">
-      <ul>
-        <li><a href="#home">Equino</a></li>
-        <li><a href="#news">Noticias</a></li>
-        <li><a href="#contact">Registrate</a></li>
-        <li style="float: right"><a href="#about">Conoceme</a></li>
-      </ul>
-    </div>
+<div class="row">
+  <div class="twelve columns bg-navbar nav-bar-top">
+    <app-navbar></app-navbar>
   </div>
-  <div class="row">
-    <div class="twelve columns bg-white">
-      <img src="assets/images/fernando-gago-022AH0CZE7c-unsplash.jpg" style="opacity: 80%; height: 600px; width: 100%"
-           class="six column" alt="">
-    </div>
+</div>
+<div class="row">
+  <div class="twelve columns">
+    <app-navbar-secondary></app-navbar-secondary>
   </div>
+</div>
 
-  <div class="container mt-2">
-    <div class="row">
-      <div class="ten column">
-        <div class="row">
-          <div class="one-half column">
-            <img src="assets/images/IMG-20211125-WA0032.jpg"
-                 style="width: 100%; opacity: 70%; margin-top: 2rem; position: relative" alt="" class="img-shadow">
-            <h2 class="mt-1">
-              Lo que necesita Guatire
-            </h2>
-            <P>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make
-            </P>
 
-            <h4>
-              Tu aporte es Venezuela
-            </h4>
-            <P>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make
-            </P>
-            <h3>
-              Descolonizar Mentes para Soñar Libremente!
-            </h3>
-          </div>
-          <div class="one-half column">
-            <h1>{{FRAN_Y}}</h1>
-            <p>{{LOREM_IPSUM_L}}</p>
-          </div>
+<div class="row p-color">
+  <div class="twelve columns container-padding">
+    <div class="six columns">
+      <div class="row">
+        <div class="twelve columns">
+          <img src="assets/images/portada.png" style="max-width: 90%; max-height: 90%;opacity: 90%;" alt=""
+            class="img-shadow">
+        </div>
+      </div>
+    </div>
+    <div class="four columns">
+      <div class="row">
+        <div class="twelve columns">
+          <h2 class="title-principal">{{FRAN_Y}}</h2>
+          <h3>
+            Descolonizar Mentes para Soñar Libremente!
+          </h3>
+          <p>
+            Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+            Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row mt-1">
-    <div class="ten column">
-      <div class="container mt-1 backgrund-container">
-        <div class="row">
-          <div class="ten column">
-            <div class="secondary update">
-              <p class="display-h3-left ml-1">
-                Últimas Actualizaciones
-              </p>
-            </div>
-          </div>
+  <div class="twelve columns container-padding pt-1">
+    <h4>
+      Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+      Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
+    </h4>
+  </div>
+  <div class="twelve columns container-padding pt-1">
+    <div class="row">
+      <div class="four columns">
+        <div class="expertiesico">
+          <span class="ico">
+            <fa-icon [icon]="faHandshake" size=4x [fixedWidth]="true" transform="down-9"></fa-icon>
+          </span>
         </div>
+      </div>
+      <div class="eight columns">
+        <h4>
+          Tú ya me Conoces
+        </h4>
+        <p>
+          Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+          Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <div class="expertiesico">
+          <span class="ico">
+            <fa-icon [icon]="faGlobe" size=4x [fixedWidth]="true" transform="down-9"></fa-icon>
+          </span>
+        </div>
+      </div>
+      <div class="eight columns">
+        <h4>
+          Te invito a participar en la comunidad de Guatire
+        </h4>
+        <p>
+          Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+          Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <div class="expertiesico">
+          <span class="ico">
+            <fa-icon [icon]="faMicrophone" size=4x [fixedWidth]="true" transform="down-9"></fa-icon>
+          </span>
+        </div>
+      </div>
+      <div class="eight columns">
+        <h4>
+          Sé parte de nuestra Radio
+        </h4>
+        <p>
+          Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
+          Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row strong-color">
+  <div class="twelve columns container-padding">
+    <div class="row mt-1">
+      <div class="twelve colums">
         <app-news></app-news>
       </div>
-      <div class="container mt-1 backgrund-container">
-        <div class="row">
-          <div class="one-half column">
-            <div class="container">
-              <app-videos></app-videos>
-              <app-banner-volunteering></app-banner-volunteering>
-              <app-banner-equino></app-banner-equino>
-            </div>
-          </div>
-          <div class="one-half column">
-            <app-advertinsing></app-advertinsing>
-          </div>
-        </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-color">
+  <div class="twelve columns container-padding-m">
+    <div class="row">
+      <div class="six columns">
+        <app-videos></app-videos>
       </div>
-      <div class="container mt-1 backgrund-container">
-        <div class="row">
-          <div class="ten column">
-            <div class="secondary update">
-              <p class="display-h3-left ml-1">
-                Radio Web
-              </p>
-            </div>
-          </div>
-        </div>
-        <app-banner-radio></app-banner-radio>
-      </div>
-      <div class="container mt-1 backgrund-container">
-        <div class="row">
-          <div class="ten column">
-            <div class="secondary update">
-              <p class="display-h3-left ml-1">
-                Ubícanos
-              </p>
-            </div>
-          </div>
-        </div>
-        <app-banner-location></app-banner-location>
+      <div class="six columns heading">
+        <h1>
+          Videos
+        </h1>
+        <h4>
+          Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat. Cras dictum tellus dui, vitae sollicitudin
+          ipsum tincidunt in.
+        </h4>
       </div>
     </div>
   </div>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
+</div>
+
+<div class="row s-color">
+  <div class="twelve columns container-padding">
+    <div class="row">
+      <div class="six columns">
+        <app-banner-volunteering></app-banner-volunteering>
+      </div>
+      <div class="six columns heading">
+        <h1 class="primary">
+          Voluntariado
+        </h1>
+        <h4 class="primary">
+          Es el resultado de una libre elección, es una opción ética, personal, gratuita, que no espera retribución o
+          recompensa. La palabra exacta no es desinterés, porque la persona voluntaria tiene interés, mucho interés y
+          obtiene satisfacción en sus motivaciones personales.
+        </h4>
+        <h4 class="primary">
+          Inscríbete al Voluntariado
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Banner-Radio -->
+<div class="row s-color">
+  <div class="twelve columns container-padding">
+    <app-banner-radio></app-banner-radio>
+  </div>
+</div>
+<!-- Banner-Equino -->
+<div class="row ft-color">
+  <div class="twelve columns container-padding">
+    <app-banner-equino></app-banner-equino>
+  </div>
+</div>
+<!-- Contact y Publicidad -->
+<div class="row">
+  <div class="twelve columns container-padding">
+    <div class="six columns">
+      <div class="row">
+        <app-contact></app-contact>
+      </div>
+      <div class="row">
+        <app-banner-location>></app-banner-location>
+      </div>
+    </div>
+    <div class="six columns">
+      <app-advertinsing></app-advertinsing>
+    </div>
+  </div>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>
 <!--&lt;!&ndash; there are a few shorthand columns widths as well &ndash;&gt;-->
 <!--<div class="row">-->
 <!--<div class="one-third column bg-blue">1/3</div>-->

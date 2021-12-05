@@ -1,8 +1,7 @@
 .footer{
   padding: 5rem;
-  background-color: #0FA0CE;
-  color: #ffffff;
-  margin-top: 5rem;
+  background-color:var(--strong);
+  color:var(--white);
 }
 
 img {
@@ -25,10 +24,14 @@ li {
 
 li a {
   display: block;
-  color: #111111;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+li a:hover{
+  color: var(--alternative-1);
 }
 
 .mt{

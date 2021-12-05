@@ -1,4 +1,142 @@
-body{
-  font-family: 'Poppins', sans-serif;
+@import url(".\assets\css\colors.css");
+
+.p-color {
+  color: var(--primary);
+  background-color: var(--white);
+}
+.s-color {
+  color: var(--secondary);
+  background-color: var(--white);
+}
+.strong-color p{
+  color:var(--strong);
+}
+
+.strong-color h3{
+  color:var(--strong);
+}
+.t-color {
+  color: var(--third);
+  background-color: var(--white);
+}
+.t-color p {
+  color: var(--strong);
+}
+.t-color h1 {
+  color: var(--secondary);
+}
+.ft-color {
+  color: var(--white);
+  background-color: var(--alternative-1);
+}
+
+.ft-color h1 {
+  color:var(--strong);
+}
+
+.strong-color {
+  color: var(--white);
+  background-color:var(--strong);
+}
+.strong-color p {
+  color:var(--white);
+}
+.t-.strong-color h1 {
+  color: var(--secondary);
+}
+
+/* aligment */
+.mt-1 {
+  margin-top: 2rem;
+}
+.mt-2 {
+  margin-top: 6rem;
+}
+.mb-1 {
+  margin-bottom: 2rem;
+}
+.mb-2 {
+  margin-bottom: 6rem;
+}
+
+.ml-1 {
+  margin-left: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 2rem;
+}
+
+.container-padding {
+  padding: 7rem 7rem 7rem 7rem;
+}
+.container-padding-m {
+  padding: 15rem 7rem 15rem 7rem;
+}
+
+.container-margin {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+/* text */
+.title-principal {
+  font-size: 11.5rem;
+}
+
+.update {
+  position: relative;
+  background-image: url(assets/images/overlay.png),
+    url(assets/images/overlay.png);
+  background-position: top left, top left, center center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  z-index: 1;
+}
+
+.fran-yeguez-into {
+  background-image: url(assets/images/fernando-gago-022AH0CZE7c-unsplash.jpg);
+  opacity: 80%;
+  height: 200.5rem;
+  width: 100%;
+  z-index: 1;
+}
+
+/* icons */
+.expertiesico {
+  padding: 10px 0;
+  margin-bottom: 58px;
+  border-right: 1px solid #ee6c4d;
+  text-align: center;
+}
+.expertiesico span.ico {
+  width: 14rem;
+  height: 14rem;
+  display: inline-block;
+  background-color: #98c1d9;
+  text-align: center;
+  color: #ffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
-}/* You can add global styles to this file, and also import other style files */
+} /* You can add global styles to this file, and also import other style files */
+
+.heading h1 {
+  padding-bottom: 2rem;
+  padding-right: 3.125rem;
+  margin-bottom: 2.18rem;
+  border-bottom: 0.688rem solid #ff554e;
+  display: inline-block;
+}
+
+.heading-invert h1 {
+  padding-bottom: 2rem;
+  padding-right: 3.125rem;
+  margin-bottom: 2.18rem;
+  border-bottom: 0.688rem solid #293241;
+  display: inline-block;
+}

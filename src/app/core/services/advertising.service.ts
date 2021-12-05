@@ -13,6 +13,6 @@ export class AdvertisingService {
   }
 
   getImagesAdvertising(page: number): Observable<Images[]> {
-    return this.http.get<Images[]>(this.urlEndpoint + page + '&limit=3', { reportProgress: true });
+    return this.http.get<Images[]>(this.urlEndpoint + page + '&limit=4', { reportProgress: true });
   }
 }

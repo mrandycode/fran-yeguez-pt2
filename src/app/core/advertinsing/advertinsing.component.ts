@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AdvertisingService } from '../services/advertising.service';
 import { Images } from './models/advertising';
-import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -38,11 +37,10 @@ export class AdvertinsingComponent implements OnInit, AfterViewInit {
   }
 
   generateRandom(): number {
-    let randomNumber =  this.todayNumber.toString();
+    let randomNumber = this.todayNumber.toString();
     console.log(randomNumber);
-    let subStt = randomNumber.substring(randomNumber.length, randomNumber.length-1);
-    console.log(subStt);
-    return parseInt(subStt,10)
+    let subStt = randomNumber.substring(randomNumber.length, randomNumber.length - 1);
+    return parseInt(subStt, 10);
 
   }
 
