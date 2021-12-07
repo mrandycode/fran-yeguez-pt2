@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Constants } from './constants/constants';
-import { faCoffee, faMicrophone, faHandshake, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faMicrophone, faHandshake, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',

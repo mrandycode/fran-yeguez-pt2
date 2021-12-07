@@ -1,7 +1,12 @@
-<ul>
-  <li><a href="#home">Equino</a></li>
-  <li><a href="#news_home">Noticias</a></li>
-  <li><a href="#contact">Contáctanos</a></li>
-  <li><a href="#location">Ubícanos</a></li>
-  <li style="float: right"><a href="#about">Conoceme</a></li>
-</ul>
+<div [class]="topNav" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#news_home">Noticias</a>
+    <a href="#contact">Contáctanos</a>
+    <a href="#location">Ubícanos</a>
+    <a class="right-a" href="#about">Conoceme</a>
+    <a href="javascript:void(0);" class="icon" (click)="toggle()">
+      <span class="ico">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </span>
+    </a>
+</div>
