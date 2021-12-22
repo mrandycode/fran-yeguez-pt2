@@ -32,8 +32,7 @@
               "src/assets/css/skeleton.css",
               "src/assets/css/angular-poppins-font.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

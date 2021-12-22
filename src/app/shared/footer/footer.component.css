@@ -3,6 +3,11 @@
   background-color:var(--strong);
   color:var(--white);
 }
+.footer_rss{
+  padding: 1rem;
+  background-color:var(--primary);
+  color:var(--white);
+}
 
 img {
   display: block;

@@ -1,0 +1,9 @@
+.up_button {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.up_button p {
+  margin-bottom: 2%;
+}

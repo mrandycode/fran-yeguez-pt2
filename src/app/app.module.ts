@@ -24,6 +24,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NavbarSecondaryComponent } from './shared/navbar-secondary/navbar-secondary.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './core/contact/contact.component';
+import { DonationComponent } from './core/donation/donation.component';
+import { BannerDonationComponent } from './core/donation/banner-donation/banner-donation.component';
+import { MyServicesComponent } from './core/my-services/my-services.component';
 
 const components = [
   VideosComponent,
@@ -46,7 +49,10 @@ const components = [
     BannerLocationComponent,
     NavbarComponent,
     NavbarSecondaryComponent,
-    ContactComponent
+    ContactComponent,
+    DonationComponent,
+    BannerDonationComponent,
+    MyServicesComponent
   ],
   imports: [
     CommonModule,

@@ -1,49 +1,7 @@
-/* .bg-navbar {
-  color: var(--white);
-  background-color:var(--strong);
-}
-
-.nav-bar-top {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:var(--white);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: var(--strong);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-/* li a:hover {
-  padding-bottom: 0.5rem;
-  padding-right: 3.125rem;
-  border-bottom: 0.200rem solid var(--strong);
-  display: inline-block;;
-  /* background-color:var(--strong);
-  /* color:var(--white);
-} */
-
-
-
 .topnav {
   overflow: hidden;
   background-color:var(--white);
+  position: static;
 }
 
 .topnav a {
@@ -104,7 +62,6 @@ li a {
     float: left;
   }
   .topnav.responsive a:hover {
-
     border-bottom: 0.200rem solid var(--white);
 
   }

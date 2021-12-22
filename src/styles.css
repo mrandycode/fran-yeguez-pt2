@@ -1,19 +1,19 @@
 @import url(".\assets\css\colors.css");
 
 .p-color {
-  color: var(--primary);
+  color: var(--text);
   background-color: var(--white);
 }
 .s-color {
   color: var(--secondary);
   background-color: var(--white);
 }
-.strong-color p{
-  color:var(--strong);
+.strong-color p {
+  color: var(--strong);
 }
 
-.strong-color h3{
-  color:var(--strong);
+.strong-color h3 {
+  color: var(--strong);
 }
 .t-color {
   color: var(--third);
@@ -27,19 +27,19 @@
 }
 .ft-color {
   color: var(--white);
-  background-color: var(--alternative-1);
+  background-color: var(--primary);
 }
 
 .ft-color h1 {
-  color:var(--strong);
+  color: var(--strong);
 }
 
 .strong-color {
   color: var(--white);
-  background-color:var(--strong);
+  background-color: var(--strong);
 }
 .strong-color p {
-  color:var(--white);
+  color: var(--white);
 }
 .t-.strong-color h1 {
   color: var(--secondary);
@@ -78,6 +78,16 @@
   margin: 1rem 1rem 1rem 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
 /* text */
 .title-principal {
   font-size: 11.5rem;
@@ -101,6 +111,18 @@
   z-index: 1;
 }
 
+.fb-500 {
+  font-weight: 500;
+}
+
+.fb-800 {
+  font-weight: 800;
+}
+
+.fb-bold {
+  font-weight: bold;
+}
+
 /* icons */
 .expertiesico {
   padding: 10px 0;
@@ -108,6 +130,7 @@
   border-right: 1px solid #ee6c4d;
   text-align: center;
 }
+
 .expertiesico span.ico {
   width: 14rem;
   height: 14rem;
@@ -123,6 +146,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+  color: var(--text);
 } /* You can add global styles to this file, and also import other style files */
 
 .heading h1 {
@@ -139,4 +163,26 @@ body {
   margin-bottom: 2.18rem;
   border-bottom: 0.688rem solid #293241;
   display: inline-block;
+}
+
+.div_image_static div {
+  background-image: url("https://images.unsplash.com/photo-1553108715-308e8537ce55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=30");
+  background-attachment: fixed;
+  opacity: 50%;
+  padding-top: 20%;
+}
+.div_image_static_equino div {
+  background-image: url("https://images.unsplash.com/photo-1553284965-5dd8352ff1bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-attachment: fixed;
+  opacity: 50%;
+  padding-top: 20%;
+}
+
+
+.letras_banner {
+  background-color: var(--white);
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 40px;
+  text-align: center;
 }
