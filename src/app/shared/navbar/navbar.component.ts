@@ -23,4 +23,9 @@ export class NavbarComponent implements OnInit {
       this.topNav = "topnav";
     }
   }
+
+  closeNav (): void{
+    this.topNav = "topnav";
+  }
+
 }

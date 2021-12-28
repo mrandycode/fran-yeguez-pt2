@@ -67,6 +67,9 @@
   margin-bottom: 2rem;
 }
 
+.container-padding-s {
+  padding: 1rem 7rem 1rem 7rem;
+}
 .container-padding {
   padding: 7rem 7rem 7rem 7rem;
 }
@@ -178,11 +181,32 @@ body {
   padding-top: 20%;
 }
 
-
 .letras_banner {
   background-color: var(--white);
   padding-left: 8px;
   padding-right: 8px;
   font-size: 40px;
   text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .right-arrow {
+    display: none;
+  }
+  .left-arrow{
+    display: none;
+  }
+  .div_image_static div {
+    background-image: url("https://images.unsplash.com/photo-1553108715-308e8537ce55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=30");
+    background-attachment: fixed;
+    height: 40%;
+    width: 100%;
+  }
+  .div_image_static_equino div {
+    background-image: url("https://images.unsplash.com/photo-1553284965-5dd8352ff1bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80");
+    height: 10%;
+    width: 100%;
+  }
 }

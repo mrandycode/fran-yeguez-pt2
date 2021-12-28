@@ -1,51 +1,34 @@
-<!-- <div class="heading">
+<div class="heading">
   <h1 class="white fb-500">Anuncios</h1>
-  <div class="row">
-    <div class="twelve columns">
-      <div class="six columns" *ngFor=" let image of this.images">
-        <img src="{{image.download_url}}" alt="{{image.author}}" class="u-max-full-width">
-          <div class="container-adv">
-            <h4>{{image.author}}</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+</div>
 
-<div class="twelve columns container-padding" id="carrusel">
-  <div class="heading">
-    <h1 class="white fb-500">Anuncios</h1>
+<div class="row">
+
+  <div class="one column">
+    <span class="left-arrow">
+      <fa-icon [icon]="faAngleLeft" size=6x [fixedWidth]="true" (click)="back()"></fa-icon>
+    </span>
   </div>
 
-  <div class="row">
-
-    <div class="one column">
-      <span class="left-arrow">
-        <fa-icon [icon]="faAngleLeft" size=6x [fixedWidth]="true" (click)="back()"></fa-icon>
-      </span>
+  <section style="margin-left: 10%;" [class]="animation">
+    <div class="five columns">
+      <h1 class="strong fb-500">
+        {{images[position].author}}
+      </h1>
+      <h4 class="text">
+        {{images[position].author}}
+      </h4>
     </div>
-
-    <section style="margin-left: 10%;" [class]="animation">
-      <div class="five columns">
-        <h1 class="strong fb-500">
-          {{images[position].author}}
-        </h1>
-        <h4 class="text">
-          {{images[position].author}}
-        </h4>
+    <div class="five columns">
+      <div class="one-half columns">
+        <img class="u-max-full-width" src="{{images[position].download_url}}" alt="services.title">
       </div>
-      <div class="five columns">
-        <div class="one-half columns">
-          <img class="u-max-full-width" src="{{images[position].download_url}}" alt="services.title">
-        </div>
-      </div>
-    </section>
-
-    <div class="one column">
-      <span class="right-arrow">
-        <fa-icon [icon]="faAngleRight" size=6x [fixedWidth]="true" (click)="next()"></fa-icon>
-      </span>
     </div>
+  </section>
+
+  <div class="one column">
+    <span class="right-arrow">
+      <fa-icon [icon]="faAngleRight" size=6x [fixedWidth]="true" (click)="next()"></fa-icon>
+    </span>
   </div>
-
 </div>

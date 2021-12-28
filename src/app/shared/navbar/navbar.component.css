@@ -1,7 +1,9 @@
 .topnav {
   overflow: hidden;
-  background-color:var(--white);
-  position: static;
+  background-color: var(--white);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .topnav a {
@@ -14,40 +16,35 @@
   font-size: 17px;
 }
 
-
 .topnav a.active {
-  background-color:var(--primary);
-  color:var(--white);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .topnav .icon {
   display: none;
 }
 
-.topnav .right-a{
+.topnav .right-a {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav .right-a{
-    float: right;
-  }
-  .topnav a:hover {
-    padding-bottom: 0.5rem;
-    padding-right: 3.125rem;
-    border-bottom: 0.200rem solid var(--strong);
-    display: inline-block;;
-  }
-
+.topnav a:hover {
+  border-bottom: 0.1rem solid var(--strong);
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: flex;
+    display: -webkit-flex;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -58,11 +55,9 @@
     display: block;
     text-align: left;
   }
-  .topnav.responsive .right-a{
+  .topnav.responsive .right-a {
     float: left;
   }
-  .topnav.responsive a:hover {
-    border-bottom: 0.200rem solid var(--white);
-
-  }
 }
+
+

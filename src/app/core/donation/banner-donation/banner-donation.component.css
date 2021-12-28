@@ -7,3 +7,20 @@
 .up_button p {
   margin-bottom: 2%;
 }
+
+@media screen and (max-width: 600px) {
+  .up_button{
+    position: static;
+  }
+  .up_button{
+    display: block;
+    text-align: center;
+  }
+  .letras_banner {
+    background-color: var(--strong);
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+
+  }
+}
