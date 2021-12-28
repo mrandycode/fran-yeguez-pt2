@@ -190,7 +190,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
 
   .right-arrow {
     display: none;
@@ -199,14 +199,14 @@ body {
     display: none;
   }
   .div_image_static div {
-    background-image: url("https://images.unsplash.com/photo-1553108715-308e8537ce55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=30");
+    background-image: url("https://images.unsplash.com/photo-1553108715-308e8537ce55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=550&q=30");
     background-attachment: fixed;
     height: 40%;
-    width: 100%;
+    max-width: 100%;
   }
   .div_image_static_equino div {
-    background-image: url("https://images.unsplash.com/photo-1553284965-5dd8352ff1bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80");
+    background-image: url("https://images.unsplash.com/photo-1553284965-5dd8352ff1bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=550&q=80");
     height: 10%;
-    width: 100%;
+    max-width: 100%;
   }
 }

@@ -3,6 +3,7 @@
   background-color: var(--white);
   position: fixed;
   width: 100%;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -33,18 +34,17 @@
   border-bottom: 0.1rem solid var(--strong);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
-    display: flex;
-    display: -webkit-flex;
+    display: block;
     float: right;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .topnav.responsive .icon {
     position: absolute;
     right: 0;

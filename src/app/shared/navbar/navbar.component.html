@@ -1,13 +1,15 @@
-<div [class]="topNav" id="myTopnav">
-  <a href="#home" (click)="closeNav()">Home</a>
-  <a href="#news_home" (click)="closeNav()">Noticias</a>
-  <a href="#banner_radio" (click)="closeNav()">Radio</a>
-  <a href="#contact" (click)="closeNav()">Contáctanos</a>
-  <a href="#location" (click)="closeNav()">Ubícanos</a>
-  <a class="right-a" href="#about" (click)="closeNav()">Conoceme</a>
-  <a class="icon" (click)="toggle()">
-    <span class="ico">
-      <fa-icon [icon]="faBars"></fa-icon>
-    </span>
-  </a>
+<div [class]="topNav">
+  <nav  id="myTopnav">
+    <a href="#home" (click)="closeNav()">Home</a>
+    <a href="#news_home" (click)="closeNav()">Noticias</a>
+    <a href="#banner_radio" (click)="closeNav()">Radio</a>
+    <a href="#contact" (click)="closeNav()">Contáctanos</a>
+    <a href="#location" (click)="closeNav()">Ubícanos</a>
+    <a class="right-a" href="#about" (click)="closeNav()">Conoceme</a>
+    <a class="icon" (click)="toggle()">
+      <span class="ico">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </span>
+    </a>
+  </nav>
 </div>
