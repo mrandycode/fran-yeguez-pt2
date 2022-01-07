@@ -27,17 +27,14 @@
       </div>
     </div>
     <div class="row mt container">
-      <div class="twelve columns">
+      <div class="twelve columns" style="display: block; align-items: center;">
           <ul>
             <li><a href="#">INICIO</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">NOTICIAS</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">EVENTOS</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">EQUINOTERAPIA</a></li>
-            <li><a href="#">|</a></li>
-            <li><a href="#">UBÍCANOS</a></li>
+            <li><a href="#news_home">NOTICIAS</a></li>
+            <li><a [routerLink]="['/voluntariado']" fragment="voluntariado_">VOLUNTARIADO</a></li>
+            <li><a href="#equino">EQUINOTERAPIA</a></li>
+            <li><a href="#location">UBÍCANOS</a></li>
+            <li><a href="#contact">CONTACTANOS</a></li>
           </ul>
       </div>
     </div>

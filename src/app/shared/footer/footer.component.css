@@ -21,10 +21,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 li {
-  float: left;
+ display: inline-block;
 }
 
 li a {
@@ -33,6 +34,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-left: 2px solid white;
+  line-height: 1px;
 }
 
 li a:hover{
@@ -50,4 +53,12 @@ li a:hover{
 
 .fran-y h1{
   font-size: 10rem;
+}
+@media screen and (max-width: 550px) {
+  li {
+    display: block;
+   }
+  li a {
+    border-left: 0px;
+  }
 }

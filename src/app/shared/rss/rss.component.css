@@ -1,3 +1,8 @@
+img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
 .ml-icons-1{
   margin-left: 2rem;
 }
