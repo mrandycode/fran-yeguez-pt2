@@ -1,0 +1,16 @@
+.div-image-static-what-do-we-do div {
+  background-image: url("/assets/images/fundacion/logo-fundacion-short.png");
+  background-attachment: fixed;
+  opacity: 60%;
+  padding: 20% 0% 20% 0%;
+  background-size: 100%;
+  background-repeat: no-repeat, repeat;
+}
+@media screen and (max-width: 550px) {
+  .div-image-static-what-do-we-do div {
+    background-image: url("/assets/images/fundacion/icono-fundacion-short.png");
+    background-attachment: fixed;
+    background-position-x: center;
+    padding: 100% 0% 20% 0%;
+  }
+}

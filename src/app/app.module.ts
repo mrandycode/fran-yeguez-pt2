@@ -27,6 +27,11 @@ import { ContactComponent } from './core/contact/contact.component';
 import { DonationComponent } from './core/donation/donation.component';
 import { BannerDonationComponent } from './core/donation/banner-donation/banner-donation.component';
 import { MyServicesComponent } from './core/my-services/my-services.component';
+import { CoverImagesComponent } from './shared/cover-images/cover-images.component';
+import { WhatDoWeDoComponent } from './core/what-do-we-do/what-do-we-do.component';
+import { BannerWhatDoWeDoComponent } from './core/what-do-we-do/banner-what-do-we-do/banner-what-do-we-do.component';
+import { WhoAreWeComponent } from './core/who-are-we/who-are-we.component';
+import { HomeComponent } from './shared/home/home.component';
 
 const components = [
   VideosComponent,
@@ -52,7 +57,12 @@ const components = [
     ContactComponent,
     DonationComponent,
     BannerDonationComponent,
-    MyServicesComponent
+    MyServicesComponent,
+    CoverImagesComponent,
+    WhatDoWeDoComponent,
+    BannerWhatDoWeDoComponent,
+    WhoAreWeComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,

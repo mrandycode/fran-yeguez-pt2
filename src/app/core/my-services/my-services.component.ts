@@ -17,7 +17,7 @@ export class MyServicesComponent implements OnInit {
       title: "Sé parte deAtletas por la vida",
       description:
         "Nuestro Club Deportivo promueve la inclusión" +
-        "de las personas a través de la práctica y el desarrollo deportivo," +
+        "de las personas a través de la práctica y el desarrollo deportivo, " +
         "permitiéndoles transformar su entorno social y consolidar sus proyectos " +
         "de vida como deportistas convencionales " +
         "y paralímpicos.",

@@ -1,15 +1,28 @@
-<div [class]="topNav">
-  <nav  id="myTopnav">
-    <a href="#home" (click)="closeNav()">Home</a>
-    <a href="#news_home" (click)="closeNav()">Noticias</a>
-    <a href="#banner_radio" (click)="closeNav()">Radio</a>
-    <a href="#contact" (click)="closeNav()">Contáctanos</a>
-    <a href="#location" (click)="closeNav()">Ubícanos</a>
-    <a class="right-a" href="#about" (click)="closeNav()">Conoceme</a>
-    <a class="icon" (click)="toggle()">
-      <span class="ico">
-        <fa-icon [icon]="faBars"></fa-icon>
-      </span>
-    </a>
-  </nav>
-</div>
+
+<nav [class]="topNav" role="navigation">
+  <ul>
+    <li><a href="#home">Inicio</a></li>
+    <li><a href="#banner-que-hacemos">Qué Hacemos &dtrif;</a>
+      <ul>
+        <li><a [routerLink]="['/quienes-somos']" fragment="quienes_somos">Quiénes Somos</a></li>
+        <li><a href="#">Alimentación y Salud</a></li>
+        <li><a href="#">Desarrollo Comunitario</a></li>
+      </ul>
+    </li>
+    <li><a>Colabora &dtrif;</a>
+      <ul>
+        <li><a href="#">Apadrina</a></li>
+        <li><a [routerLink]="['/voluntariado']" fragment="voluntariado_">Voluntariado</a></li>
+      </ul>
+    </li>
+    <li><a href="#news_home">Noticias</a></li>
+    <li><a href="#banner_radio">Radio</a></li>
+    <li><a href="#contact">Contáctanos</a></li>
+    <li class="icon"><a (click)="toggle()">
+        <span class="ico">
+          <fa-icon [icon]="faBars"></fa-icon>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>

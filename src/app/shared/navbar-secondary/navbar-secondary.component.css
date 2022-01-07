@@ -1,6 +1,13 @@
 .picture-conf{
   opacity: 80%;
-  height: 50rem;
+  height: 60rem;
   width: 100%;
   max-width: 100%;
+  filter: brightness(30%);
+}
+
+@media screen and (max-width: 600px) {
+  .picture-conf{
+    height: 40rem;
+  }
 }
