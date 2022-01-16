@@ -1,0 +1,90 @@
+<div id="equinoterapia_">
+  <img
+    src="/assets/images/equino/Equino-10.jpg"
+    class="u-max-full-width picture-conf" alt="">
+  <div class="up-text">
+    <h1 class="banner-content text fb-800">Equinoterapia</h1>
+    <h4 class="banner-content text">La Equinoterapia como apoyo para las personas con discapacidad.</h4>
+  </div>
+
+  <div class="row">
+    <div class="six columns container-padding">
+      <h2 class="text fb-800">
+        ¿ Qué es?
+      </h2>
+      <p class="text">
+        Se trata de una disciplina ecuestre que aprovecha la relación afectiva que se establece con el caballo para
+        ayudar a personas con problemas de adaptación social a superar sus conflictos y así integrarse de forma
+        normalizada en la sociedad.
+      </p>
+    </div>
+    <div class="six columns mt-1">
+      <img
+        src="/assets/images/equino/Equino-2.jpg"
+        alt="" class="u-max-full-width">
+    </div>
+  </div>
+
+  <div class="row ft-color">
+    <div class="six columns mt-2">
+      <img
+        src="/assets/images/equino/Equino-4.jpg"
+        alt="" class="u-max-full-width">
+        <img
+        src="/assets/images/equino/Equino-9.jpg"
+        alt="" class="u-max-full-width">
+    </div>
+    <div class="six columns container-padding">
+      <h2 class="fb-800">
+        ¿Cómo funciona?
+      </h2>
+      <p class="text">La equinoterapia es un tratamiento que usa los movimientos de un caballo para lograr las respuestas deseadas en una persona,
+        en función de su discapacidad. La persona con discapacidad puede estar sentada sobre el caballo en una variedad de posiciones, aceptando pasivamente el movimiento del caballo. El caballo actúa
+        como una base dinámica de soporte sobre la que la persona puede coordinar y controlar sus movimientos.</p>
+
+        <p class="text">La equinoterapia puede incluir técnicas para ayudar a desarrollar el equilibrio y reacciones posturales.</p>
+
+        <p class="text">Para asegurarse de que la persona con discapacidad esté en todo momento a salvo y cómodo, la psicóloga trabaja con otro profesional que se encarga del manejo del caballo, adaptando el ritmo y los movimientos del animal a las necesidades personales.</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+      <img  src="/assets/images/equino/Equino-3.jpg" alt=""
+        class="u-max-full-width">
+
+        <img  src="/assets/images/equino/Equino-7.jpg" alt=""
+        class="u-max-full-width mt-1">
+    </div>
+
+    <div class="six columns container-padding">
+      <h2 class="text fb-800">
+        Equinoterapia como tratamiento socio-integrador
+      </h2>
+      <p class="text">- La persona con discapacidad experimenta la diversión, el placer y la alegría que siente al montar a caballo, aportando
+         de esta manera soluciones a los problemas de aprendizaje y adaptación que presentan las personas afectadas por alguna dificultad. Aumenta la motivación, estimula la afectividad,
+        mejora la atención y concentración y estimula la sensibilidad táctil, visual, auditiva y olfativa.!</p>
+
+        <p class="text"> - La prioridad es pasar un tiempo de ocio con el animal, enfocando la integración social y aprovechar el movimiento multidimensional del caballo con un sentido terapéutico para contrarrestar daños indirectos o secundarios.</p>
+        <p class="text"> - La equitación aprovecha la relación afectiva que se establece con el caballo para ayudar a personas con dificultades de adaptación social a superar sus conflictos y así integrarse en la sociedad.</p>
+        <p class="text"> <strong> Sí deseas participar en el voluntariado, Inscríbete</strong></p>
+        <button type="button" class="button-primary"
+          [routerLink]="['/voluntariado']" fragment="voluntariado_">
+            Inscríbete
+        </button>
+
+    </div>
+  </div>
+
+  <div class="text-center container-margin mt-2">
+    <h2 class="text fb-800">Nuestra Galería</h2>
+    <div class="grid-gallery">
+
+      <a class="grid-gallery__item"  *ngFor="let imageEquino of images"  [href]="assets+imageEquino.name">
+        <img class="grid-gallery__image" [src]="assets+imageEquino.name">
+      </a>
+    </div>
+  </div>
+
+</div>

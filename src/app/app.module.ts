@@ -32,6 +32,7 @@ import { WhatDoWeDoComponent } from './core/what-do-we-do/what-do-we-do.componen
 import { BannerWhatDoWeDoComponent } from './core/what-do-we-do/banner-what-do-we-do/banner-what-do-we-do.component';
 import { WhoAreWeComponent } from './core/who-are-we/who-are-we.component';
 import { HomeComponent } from './shared/home/home.component';
+import { EquinoComponent } from './core/equino/equino.component';
 
 const components = [
   VideosComponent,
@@ -62,7 +63,8 @@ const components = [
     WhatDoWeDoComponent,
     BannerWhatDoWeDoComponent,
     WhoAreWeComponent,
-    HomeComponent
+    HomeComponent,
+    EquinoComponent
   ],
   imports: [
     CommonModule,
