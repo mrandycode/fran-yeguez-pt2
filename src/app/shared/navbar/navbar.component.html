@@ -1,23 +1,23 @@
 
 <nav [class]="topNav" role="navigation">
   <ul>
-    <li><a href="#home">Inicio</a></li>
-    <li><a href="#banner-que-hacemos">Qué Hacemos &dtrif;</a>
-      <ul>
+    <li><a href="#home" (click)="closeNav()">Inicio</a></li>
+    <li class="margin-t"><a href="#banner-que-hacemos" (click)="closeNav()">Qué Hacemos &dtrif;</a>
+      <ul (click)="closeNav()">
         <li><a [routerLink]="['/quienes-somos']" fragment="quienes_somos">Quiénes Somos</a></li>
         <li><a href="#">Alimentación y Salud</a></li>
         <li><a href="#">Desarrollo Comunitario</a></li>
       </ul>
     </li>
-    <li><a>Colabora &dtrif;</a>
-      <ul>
+    <li class="margin-t"><a>Colabora &dtrif;</a>
+      <ul (click)="closeNav()">
         <li><a href="#">Apadrina</a></li>
         <li><a [routerLink]="['/voluntariado']" fragment="voluntariado_">Voluntariado</a></li>
       </ul>
     </li>
-    <li><a href="#news_home">Noticias</a></li>
-    <li><a href="#banner_radio">Radio</a></li>
-    <li><a href="#contact">Contáctanos</a></li>
+    <li class="margin-t"><a href="#news_home" (click)="closeNav()">Noticias</a></li>
+    <li class="margin-t"><a href="#banner_radio" (click)="closeNav()">Radio</a></li>
+    <li class="margin-t"><a href="#contact" (click)="closeNav()">Contáctanos</a></li>
     <li class="icon"><a (click)="toggle()">
         <span class="ico">
           <fa-icon [icon]="faBars"></fa-icon>
