@@ -1,0 +1,40 @@
+header div{
+  margin-top: 6rem;
+}
+
+p{
+  font-size: 2.5rem;;
+  }
+  .picture-conf{
+    height: 60rem;
+    width: 100%;
+    max-width: 100%;
+    filter: brightness(50%);
+  }
+
+  .up-text {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    opacity: 50%;
+  }
+
+  .up-text p {
+    margin-bottom: 2%;
+  }
+  .up-text h4 {
+    margin-bottom: 2%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .picture-conf{
+      height: 40rem;
+    }
+    .up-text{
+      position: static;
+    }
+    .up-text{
+      display: block;
+      text-align: center;
+    }
+  }

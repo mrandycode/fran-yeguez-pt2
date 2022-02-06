@@ -29,37 +29,11 @@
           </h5>
         </div>
       </div>
-      <!-- <div class="six columns">
-        <div class="row">
-          <div class="twelve columns">
-            <img src="assets/images/portada.png" style="max-width: 70%; max-height: 70%;opacity: 90%;" alt=""
-              class="img-shadow">
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="twelve columns">
-        <div class="row">
-          <div class="twelve columns">
-            <h2 class="title-principal strong">{{FRAN_Y}}</h2>
-            <h1 class="strong">
-              Descolonizar Mentes para Soñar Libremente!
-            </h1>
-            <p class="text">
-            Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
-            Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
-          </p>
-          </div>
-        </div>
-      </div> -->
     </div>
     <app-banner-what-do-we-do id="banner-que-hacemos"></app-banner-what-do-we-do>
     <app-my-services></app-my-services>
 
     <div class="twelve columns container-padding pt-1">
-      <h4 class="strong">
-        Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
-        Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in. Sed tincidunt tristique enim sed sollcitudin.
-      </h4>
     </div>
     <div class="twelve columns container-padding pt-1">
       <div class="row">
@@ -111,8 +85,7 @@
             Sé parte de nuestra Radio
           </h4>
           <p class="strong">
-            Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat.
-            Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt in.
+           Comparte conocimiento en nuestra radio.
           </p>
         </div>
       </div>
@@ -132,8 +105,8 @@
   <!-- Banner-Radio -->
 
   <div class="div_image_static twelve columns ">
-    <div class="container-padding">
-      <h1 class="strong fb-500 banner-content six columns offset-by-three">
+    <div class="twelve columns container-padding">
+      <h1 class="strong fb-500 banner-content twelve columns">
         Apoyando siempre al deporte
       </h1>
     </div>
@@ -157,7 +130,7 @@
     </div>
   </div>
 
-  <div class="row p-color">
+  <!-- <div class="row p-color">
     <div class="twelve columns container-padding-m">
       <div class="row">
         <div class="six columns">
@@ -175,14 +148,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="row s-color">
     <div class="twelve columns container-padding">
       <div class="row">
-        <div class="six columns">
-          <app-banner-volunteering></app-banner-volunteering>
-        </div>
         <div class="six columns heading">
           <h1 class="strong fb-500">
             Voluntariado
@@ -194,23 +164,26 @@
             y
             obtiene satisfacción en sus motivaciones personales.
           </h4>
-          <button type="button" class="button-primary"
-          [routerLink]="['/voluntariado']" fragment="voluntariado_">
+          <button type="button" class="button-primary" [routerLink]="['/voluntariado']" fragment="voluntariado_">
             Inscríbete
-        </button>
+          </button>
+        </div>
+        <div class="six columns">
+          <app-banner-volunteering></app-banner-volunteering>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="row">
+  <!-- Anuncios -->
+  <!-- <div class="row">
     <div class="twelve columns container-padding strong-color">
       <div class="row">
         <app-advertinsing></app-advertinsing>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Contact y Publicidad -->

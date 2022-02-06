@@ -1,4 +1,6 @@
 @import url(".\assets\css\colors.css");
+/* @import "~alertifyjs/build/css/alertify.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.rtl.min.css"; */
 
 .p-color {
   color: var(--text);
@@ -38,6 +40,11 @@
   color: var(--white);
   background-color: var(--strong);
 }
+
+.secondary-color{
+  color: var(--white);
+  background-color: var(--alternative-1);
+}
 .strong-color p {
   color: var(--white);
 }
@@ -51,6 +58,10 @@
 }
 .mt-2 {
   margin-top: 6rem;
+}
+
+.mt-3 {
+  margin-top: 8rem;
 }
 .mb-1 {
   margin-bottom: 2rem;
@@ -149,7 +160,7 @@
 .ico-yellow fa-icon {
   width: 14rem;
   height: 14rem;
-  color:orange;
+  color: orange;
 }
 
 body {
@@ -199,12 +210,16 @@ body {
   text-align: center;
 }
 
+.width-100 {
+  width: 100%;
+  max-width: 100%;
+}
 
 @media screen and (max-width: 550px) {
   .right-arrow {
     display: none;
   }
-  .left-arrow{
+  .left-arrow {
     display: none;
   }
   .div_image_static div {

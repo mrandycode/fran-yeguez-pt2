@@ -30,9 +30,11 @@
               "src/styles.css",
               "src/assets/css/normalize.css",
               "src/assets/css/skeleton.css",
-              "src/assets/css/angular-poppins-font.css"
+              "src/assets/css/angular-poppins-font.css",
+              "./node_modules/alertifyjs/build/css/alertify.min.css",
+              "./node_modules/alertifyjs/build/css/themes/semantic.min.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/alertifyjs/build/alertify.min.js"]
           },
           "configurations": {
             "production": {

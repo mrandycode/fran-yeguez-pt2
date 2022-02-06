@@ -9,7 +9,7 @@ import { AdvertinsingComponent } from './core/advertinsing/advertinsing.componen
 import { AdvertisingService } from './core/services/advertising.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { FooterComponent } from './shared/footer/footer.component';
 import { RssComponent } from './shared/rss/rss.component';
 import { VolunteeringComponent } from './core/volunteering/volunteering.component';
@@ -33,6 +33,11 @@ import { BannerWhatDoWeDoComponent } from './core/what-do-we-do/banner-what-do-w
 import { WhoAreWeComponent } from './core/who-are-we/who-are-we.component';
 import { HomeComponent } from './shared/home/home.component';
 import { EquinoComponent } from './core/equino/equino.component';
+import { ContactService } from './core/services/contact.service';
+import { AlertifyService } from './shared/services/alertify.service';
+import { GotoSchoolComponent } from './core/goto-school/goto-school.component';
+import { HealthAndFeedingComponent } from './core/health-and-feeding/health-and-feeding.component';
+import { CommunityProgressComponent } from './core/community-progress/community-progress.component';
 
 const components = [
   VideosComponent,
@@ -64,7 +69,10 @@ const components = [
     BannerWhatDoWeDoComponent,
     WhoAreWeComponent,
     HomeComponent,
-    EquinoComponent
+    EquinoComponent,
+    GotoSchoolComponent,
+    HealthAndFeedingComponent,
+    CommunityProgressComponent
   ],
   imports: [
     CommonModule,
@@ -85,7 +93,7 @@ const components = [
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [AdvertisingService],
+  providers: [AdvertisingService, ContactService, AlertifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -5,17 +5,39 @@
       Contactanos
     </h1>
   </div>
-  <div class="row">
+  <form class="row">
     <div class="six columns">
-      <label for="exampleEmailInput">Nombre y Apellido</label>
-      <input class="u-full-width" type="text" placeholder="Ej. Pedro Pérez" id="nameInput">
+      <label for="fullName">Nombre y Apellido</label>
+      <input
+      [ngModelOptions]="{standalone: true}"
+      [(ngModel)]="contact.fullName"
+      class="u-full-width"
+      type="text"
+      placeholder="Ej. Pedro Pérez"
+      id="fullName">
     </div>
     <div class="six columns">
       <label for="exampleEmailInput">Correo Electrónico</label>
-      <input class="u-full-width" type="email" placeholder="Ej. test@mailbox.com" id="emailInput">
+      <input
+      [ngModelOptions]="{standalone: true}"
+     [(ngModel)]="contact.email"
+      value="{{contact.email}}"
+      class="u-full-width"
+      type="email"
+      placeholder="Ej. test@mailbox.com"
+      id="exampleEmailInput">
     </div>
-  </div>
+  </form>
   <label for="exampleMessage">Mensaje</label>
-  <textarea class="u-full-width" id="inputMessage"></textarea>
-  <input class="button-primary" type="submit" value="Enviar">
+  <textarea
+  [ngModelOptions]="{standalone: true}"
+  [(ngModel)]="contact.message"
+  class="u-full-width"
+  id="exampleMessage"
+  ></textarea>
+  <button
+  [disabled]="!contact.fullName && !contact.email && !contact.message"
+  class="button-primary"
+  type="submit"
+  (click)="createContact()">Enviar</button>
 </form>

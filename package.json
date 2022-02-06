@@ -1,6 +1,6 @@
 {
   "name": "fran-yeguez-pt2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,6 +22,7 @@
     "@fortawesome/angular-fontawesome": "^0.10.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "alertifyjs": "^1.13.1",
     "animate.css": "^4.1.1",
     "ng-image-slider": "^2.8.0",
     "rxjs": "~7.4.0",

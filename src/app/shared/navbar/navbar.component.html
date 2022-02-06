@@ -5,13 +5,13 @@
     <li class="margin-t"><a href="#banner-que-hacemos" (click)="closeNav()">Qué Hacemos &dtrif;</a>
       <ul (click)="closeNav()">
         <li><a [routerLink]="['/quienes-somos']" fragment="quienes_somos">Quiénes Somos</a></li>
-        <li><a href="#">Alimentación y Salud</a></li>
-        <li><a href="#">Desarrollo Comunitario</a></li>
+        <li><a [routerLink]="['/vamos-a-la-escuela']" fragment="vamos-a-la-escuela">Vamos a la Escuela</a></li>
+        <li><a [routerLink]="['/nutricion-y-salud']" fragment="nutricion-y-salud">Nutrición y Salud</a></li>
+        <li><a [routerLink]="['/desarrollo-comunitario']" fragment="desarrollo-comunitario">Desarrollo Comunitario</a></li>
       </ul>
     </li>
     <li class="margin-t"><a>Colabora &dtrif;</a>
       <ul (click)="closeNav()">
-        <li><a href="#">Apadrina</a></li>
         <li><a [routerLink]="['/voluntariado']" fragment="voluntariado_">Voluntariado</a></li>
       </ul>
     </li>
